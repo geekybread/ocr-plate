@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import pytesseract as pt
+import os
 
-model = tf.keras.models.load_model('./static/models/object_detection.h5')
+model = tf.keras.models.load_model(os.path.join('./static/models/','object_detection.h5'))
 
 def object_detection(path,filename):
     # read image
