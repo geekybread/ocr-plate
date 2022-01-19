@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import pytesseract as pt
 
 BASE_PATH = os.getcwd()
-model = tf.keras.models.load_model(os.path.join(BASE_PATH,'static/upload/object_detection.h5'))
+model = tf.keras.models.load_model(os.path.join(BASE_PATH,'static/models/object_detection.h5'))
 
 def object_detection(path,filename):
     # read image
